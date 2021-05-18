@@ -141,9 +141,24 @@ body {
     margin-right: 15px;
     font-size: 16px;
     transition: .4s;
+    position: relative;
 }
 .header .container .links ul li:hover a {
     color: var(--primary-color);
+}
+.header .container .links ul li a::before {
+    content: "";
+    background-color: #ffc107;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    transition: .5s;
+}
+.header .container .links ul li a:hover::before {
+    width: 100%;
+    right: 0;
 }
 @media (max-width: 767px) {
     .header .container .links ul {
