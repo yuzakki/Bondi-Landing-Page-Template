@@ -267,25 +267,6 @@ body {
     padding: 30px;
     position: relative;
 }
-.section .container .box-1::before ,
-.section .container .box-2::before ,
-.section .container .box-3::before {
-    content: "1";
-    position: absolute;
-    width: 100%;
-    font-size: 13em;
-    text-align: center;
-    margin: -20vh -40px 0;
-    z-index: -2;
-    color: #eff7fa;
-    font-family: sans-serif;
-}
-.section .container .box-2::before {
-    content: "2";
-}
-.section .container .box-3::before {
-    content: "3";
-}
 @media (max-width: 767px) {
     .section .container .box-1::before ,
     .section .container .box-2::before ,
