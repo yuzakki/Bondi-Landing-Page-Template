@@ -1,6 +1,6 @@
 <!-- Hello my name is HASSAN and this is my second project with HTML & CSS,
     and I still trying to do many great projects in order to improve my level
-    and hope that you like my work and thanks 😁💛
+    and hope that you like my work and thanks By: くん ダーウィン 😁💛
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -17,27 +17,31 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap">
         <!-- Render All Elements Normally -->
-        <link rel="stylesheet" href="/css/Normalize.css">   
+        <link rel="stylesheet" href="/css/Normalize.css">
+        <!-- Animation Effect On Scroll library -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <!-- Start Header -->
         <div class="header">
             <div class="container">
                 <div class="logo">
-                    <img src="/image/logo.png" alt="logo">
+                    <img src="/image/logo.png" data-aos="fade-right" alt="logo">
                 </div>
                 <div class="links">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li data-aos="zoom-in"><a href="#">Home</a></li>
+                        <li data-aos="zoom-in"><a href="#">Services</a></li>
+                        <li data-aos="zoom-in"><a href="#">Portfolio</a></li>
+                        <li data-aos="zoom-in"><a href="#">About</a></li>
+                        <li data-aos="zoom-in"><a href="#">Contact</a></li>
                     </ul>
                     <i class="fas fa-bars toggle-menu"></i>
                 </div>
-                <i class="fas fa-search search-box"></i>
-                <button><a href="#">Login</a></button>
+                <i class="fas fa-search search-box" data-aos="zoom-in"></i>
+                <button data-aos="fade-left">
+                    <a href="#">Login</a>
+                </button>
             </div>
         </div>
         <!-- End Header -->
@@ -45,9 +49,9 @@
         <!-- Start Landing -->
         <div class="landing">
             <div class="container">
-                <h1>Taste the Ceativity</h1>
-                <p>We make awesome graphic and web design</p>
-                <button>
+                <h1 data-aos="fade-down" data-aos-easing="ease-in-out">Taste the Ceativity</h1>
+                <p data-aos="zoom-in">We make awesome graphic and web design</p>
+                <button data-aos="fade-up" data-aos-easing="ease-in-out">
                     <a href="#">Get Started</a>
                 </button>
             </div>
@@ -57,25 +61,29 @@
         <!-- Start Section -->
         <div class="section">
             <div class="main-heading">
-                <h2>We are Good At</h2>
-                <p>some of thease stuff under</p>
+                <h2 data-aos="fade-up" data-aos-easing="ease-in-out">
+                    We are Good At
+                </h2>
+                <p data-aos="fade-right" data-aos-easing="ease-in-out">
+                    some of thease stuff under
+                </p>
             </div>
             <div class="container">
-                <div class="box box-1">
+                <div class="box box-1" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-pencil-alt"></i>
                     <h2> graphic design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, consectetur.
                         Possimus inventore fuga optio maxime at doloribus
                     </p>
                 </div>
-                <div class="box box-2">
+                <div class="box box-2" data-aos="fade-up" data-aos-delay="400">
                     <i class="fas fa-desktop"></i>
                     <h2>web design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, consectetur.
                         Possimus inventore fuga optio maxime at doloribus
                     </p>
                 </div>
-                <div class="box box-3">
+                <div class="box box-3" data-aos="fade-up" data-aos-delay="600">
                     <i class="fas fa-exchange-alt"></i>
                     <h2>app desing</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, consectetur.
@@ -90,8 +98,8 @@
         <div class="portfolio">
             <div class="container">
                 <div class="main-heading">
-                    <h2>We Make This</h2>
-                    <p>prepare to be amazed</p>
+                    <h2 data-aos="fade-up" data-aos-easing="ease-in-out">We Make This</h2>
+                    <p data-aos="fade-right" data-aos-easing="ease-in-out">prepare to be amazed</p>
                 </div>
                 <ul class="shuffle">
                     <li class="active">All</li>
@@ -158,7 +166,7 @@
                         <p>Design</p>
                     </div>
                 </div>
-                <a href="#">I WANT MORE...</a>
+                <a href="#" data-aos="fade-up" data-aos-easing="ease-in-out">I WANT MORE...</a>
             </div>
         </div>
         <!-- End Portfolio -->
@@ -166,9 +174,9 @@
         <!-- Start Design -->
         <div class="design">
             <div class="main-heading">
-                <h2>Some Stuff About Us</h2>
-                <p>the great team</p>
-                <div class="title-design">
+                <h2 data-aos="fade-up" data-aos-easing="ease-in-out">Some Stuff About Us</h2>
+                <p data-aos="fade-right" data-aos-easing="ease-in-out">the great team</p>
+                <div class="title-design" data-aos="fade-up" data-aos-easing="ease-in-out">
                     Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit,
                     eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta 
                     dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.
@@ -176,21 +184,22 @@
             </div>
             <div class="container">
                 <div class="text">
-                    <H2>Retina Design</H2>
-                    <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet 
+                    <H2 data-aos="fade-down" data-aos-easing="ease-in-out">Retina Design</H2>
+                    <p data-aos="fade-up" data-aos-easing="ease-in-out">
+                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet 
                         dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
                     </p>
-                    <p>
+                    <p data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out">
                         Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit,
                         eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus.
                         Proin eget tortor risus. Donec sollicitudin molestie malesuada.
                     </p>
-                    <button>
+                    <button data-aos="fade-left" data-aos-easing="ease-in-out">
                         <a href="#">OREDER ME ONE</a>
                     </button>
                 </div>
                 <div class="image">
-                    <img src="/image/design-logo.png" alt="">
+                    <img src="/image/design-logo.png" data-aos="zoom-in" data-aos-easing="ease-in-out">
                 </div>
             </div>
         </div>
@@ -200,36 +209,37 @@
         <div class="about">
             <div class="container">
                 <div class="text-block">
-                    <h2>Meet the Team</h2>
-                    <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet
+                    <h2 data-aos="fade-down" data-aos-easing="ease-in-out">Meet the Team</h2>
+                    <p data-aos="fade-up" data-aos-easing="ease-in-out">
+                        Donec rutrum congue leo eget malesuada. Mauris blandit aliquet
                         elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum
                         id orci porta dapibus. Proin eget tortor risus. Donec 
                         sollicitudinmolestie malesuada.
                     </p>
                 </div>
                 <div class="imgs-block">
-                    <div class="box">
+                    <div class="box" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out">
                         <img src="/image/shuffle-01.jpg" alt="">
                         <h2>Luke Skywalker</h2>
                         <p>“I don't understand how we got by those 
                             troops. I thought we were dead.“
                         </p>
                     </div>
-                    <div class="box">
+                    <div class="box" data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out">
                         <img src="/image/shuffle-02.jpg" alt="">
                         <h2>Luke Skywalker</h2>
                         <p>“I don't understand how we got by those 
                             troops. I thought we were dead.“
                         </p>
                     </div>
-                    <div class="box">
+                    <div class="box" data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out">
                         <img src="/image/shuffle-03.jpg" alt="">
                         <h2>Luke Skywalker</h2>
                         <p>“I don't understand how we got by those 
                             troops. I thought we were dead.“
                         </p>
                     </div>
-                    <div class="box">
+                    <div class="box" data-aos="fade-up" data-aos-delay="800" data-aos-easing="ease-in-out">
                         <img src="/image/shuffle-04.jpg" alt="">
                         <h2>Luke Skywalker</h2>
                         <p>“I don't understand how we got by those 
@@ -244,19 +254,19 @@
         <!-- Start Brands -->
         <div class="brands">
             <div class="container">
-                <div class="col col-1">
+                <div class="col col-1" data-aos="flip-left" data-aos-delay="200" data-aos-easing="ease-in-out">
                     <img src="image/logo-google.png" alt="">
                 </div>
-                <div class="col col-2">
+                <div class="col col-2" data-aos="flip-left" data-aos-delay="400" data-aos-easing="ease-in-out">
                     <img src="image/logo-ibm.png" alt="">
                 </div>
-                <div class="col col-3">
+                <div class="col col-3" data-aos="flip-left" data-aos-delay="600" data-aos-easing="ease-in-out">
                     <img src="image/logo-microsoft.png" alt="">
                 </div>
-                <div class="col col-4">
+                <div class="col col-4" data-aos="flip-left" data-aos-delay="800" data-aos-easing="ease-in-out">
                     <img src="image/logo-hp.png" alt="">
                 </div>
-                <div class="col col-5">
+                <div class="col col-5" data-aos="flip-left" data-aos-delay="1000" data-aos-easing="ease-in-out">
                     <img src="image/logo-vector-graphics.png" alt="">
                 </div>
             </div>
@@ -266,9 +276,11 @@
         <!-- Start Stats -->
         <div class="stats">
             <div class="container">
-                <h2>Start Your Project Now</h2>
-                <p>Leave your description and we start the engine.Don't worry,you can cancel anytime</p>
-                <button>
+                <h2 data-aos="fade-down" data-aos-easing="ease-in-out">Start Your Project Now</h2>
+                <p data-aos="fade-right" data-aos-easing="ease-in-out">
+                    Leave your description and we start the engine.Don't worry,you can cancel anytime
+                </p>
+                <button data-aos="fade-up" data-aos-easing="ease-in-out">
                     <a href="#">Start Project</a>
                 </button>
             </div>
@@ -279,21 +291,21 @@
         <div class="product">
             <div class="container">
                 <div class="main-heading">
-                    <h2>Read Our Blog</h2>
-                    <p>new stories</p>
+                    <h2 data-aos="fade-up" data-aos-easing="ease-in-out">Read Our Blog</h2>
+                    <p data-aos="fade-right" data-aos-easing="ease-in-out">new stories</p>
                 </div>
                 <div class="product-block">
-                    <div class="box">
+                    <div class="box" data-aos="fade-up" data-aos-easing="ease-in-out">
                         <img src="image/product-01.jpg" alt="">
                         <p class="data">January 17,2017</p>
                         <h2 class="title">Some Awesome Blog Title Here</h2>
                     </div>
-                    <div class="box">
+                    <div class="box" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out">
                         <img src="image/product-02.jpg" alt="">
                         <p class="data">January 17,2017</p>
                         <h2 class="title">Some Awesome Blog Title Here</h2>
                     </div>
-                    <div class="box">
+                    <div class="box" data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out">
                         <img src="image/product-03.jpg" alt="">
                         <p class="data">January 17,2017</p>
                         <h2 class="title">Some Awesome Blog Title Here</h2>
@@ -346,5 +358,12 @@
             </div> 
         </div>
         <!-- End Footer -->
+
+        <!-- Scripts -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- Scripts -->
     </body>
 </html>
