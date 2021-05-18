@@ -316,7 +316,8 @@ body {
 }
 @media (max-width: 767px) {
     .portfolio .shuffle {
-        gap: 15px;
+        gap: 20px;
+        flex-direction: column;
     }
 }
 .portfolio .shuffle .active {
@@ -332,7 +333,6 @@ body {
 .portfolio .container-imgs .box img {
     max-width: 100%;
 }
-/* =================== */
 .portfolio .container-imgs .box {
     overflow: hidden;
     position: relative;
@@ -368,7 +368,6 @@ body {
 .portfolio .container-imgs .box .caption p {
     color: white;
 }
-/* =================== */
 .portfolio .container-imgs a {
     text-decoration: none;
     display: block;
