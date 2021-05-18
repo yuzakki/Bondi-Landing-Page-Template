@@ -118,6 +118,7 @@ body {
 .header .container .logo img {
     max-width: 100%;
     width: 130px;
+    cursor: pointer;
 }
 .header .container .links {
     flex: 1;
