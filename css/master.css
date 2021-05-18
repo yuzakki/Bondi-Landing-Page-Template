@@ -2,10 +2,12 @@
 /* Start Variables */
 :root {
     --transparent-color: #a8b9c0;
-    --button--color: #ff3150;
+    --button--color: #EA2027;
     --background-color: #19283f;
     --section-padding: 100px;
     --main-color: #00C6BF;
+    --main-transition: .5s;
+    --main-hover: #ff3150;
     --primary-color: #FFC501;
     --secondary-color: #19283f;
 }
@@ -170,6 +172,10 @@ body {
     border-radius: 50px;
     border: none;
     cursor: pointer;
+    transition: var(--main-transition);
+}
+.header .container button:hover {
+    background-color: var(--main-hover);
 }
 .header .container button a {
     text-decoration: none;
@@ -217,6 +223,10 @@ body {
     border-radius: 50px;
     border: none;
     cursor: pointer;
+    transition: var(--main-transition);
+}
+.landing .container button:hover {
+    background-color: var(--main-hover);
 }
 .landing .container button a {
     text-decoration: none;
@@ -383,6 +393,10 @@ body {
     padding: 15px 40px;
     color: white;
     cursor: pointer;
+    transition: var(--main-transition);
+}
+.portfolio .container-imgs a:hover {
+    background-color: var(--main-hover);
 }
 @media (max-width: 767px) {
     .portfolio .container-imgs .box {
@@ -447,6 +461,10 @@ body {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    transition: var(--main-transition);
+}
+.design .container button:hover {
+    background-color: var(--main-hover);
 }
 .design .container .text button a {
     text-decoration: none;
@@ -589,6 +607,10 @@ body {
     border: none;
     cursor: pointer;
     margin: 40px 0 0;
+    transition: var(--main-transition);
+}
+.stats .container button:hover {
+    background-color: var(--main-hover);
 }
 .stats .container button a {
     text-decoration: none;
@@ -683,6 +705,10 @@ body {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    transition: var(--main-transition);
+}
+.contact .container button:hover {
+    background-color: #575fcf;
 }
 .contact .container button a {
     text-decoration: none;
